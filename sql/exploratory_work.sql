@@ -5,21 +5,21 @@ SELECT * FROM sales_data
 LIMIT 10;
 SELECT COUNT(*) FROM sales_data;
 
-CREATE TABLE sales_data (
-    ship_mode VARCHAR(50),
-    segment VARCHAR(50),
-    country VARCHAR(50),
-    city VARCHAR(100),
-    state VARCHAR(100),
-    postal_code VARCHAR(20),
-    region VARCHAR(50),
-    category VARCHAR(50),
-    sub_category VARCHAR(50),
-    sales DECIMAL(10,2),
-    quantity INT,
-    discount DECIMAL(4,2),
-    profit DECIMAL(10,2)
-);
+-- CREATE TABLE sales_data (
+    -- ship_mode VARCHAR(50),
+    -- segment VARCHAR(50),
+    -- country VARCHAR(50),
+    -- city VARCHAR(100),
+    -- state VARCHAR(100),
+    -- postal_code VARCHAR(20),
+    -- region VARCHAR(50),
+    -- category VARCHAR(50),
+    -- sub_category VARCHAR(50),
+    -- sales DECIMAL(10,2),
+    -- quantity INT,
+    -- discount DECIMAL(4,2),
+    -- profit DECIMAL(10,2)
+-- );
 
 
 -- Sales and profit by categor
@@ -134,6 +134,3 @@ SELECT
     ROUND(SUM(profit), 2) AS total_profit
 FROM sales_data_clean
 GROUP BY segment;
-
-
-
