@@ -1,7 +1,20 @@
-create database retail_analytics;
-use retail_analytics;
+/* =========================================================
+   Project: Retail Sales Data Analytics
+   Database: retail_analytics
+   Purpose: Curated SQL analysis queries
+   ========================================================= */
 
-CREATE TABLE sales_data (
+/* =======================
+   Database Context
+   ======================= */
+USE retail_analytics;
+
+/* =======================
+   Table Schema (Reference)
+   ======================= */
+-- Sales data table structure
+-- (Created via CSV import)
+CREATE TABLE IF NOT EXISTS sales_data (
     ship_mode VARCHAR(50),
     segment VARCHAR(50),
     country VARCHAR(50),
@@ -17,7 +30,18 @@ CREATE TABLE sales_data (
     profit DECIMAL(10,2)
 );
 
--- Sales and profit by categor
+/* =======================
+   Data Validation Checks
+   ======================= */
+-- Total row count
+SELECT COUNT(*) AS total_rows
+FROM sales_data;
+
+/* =======================
+   Core Business Analysis
+   ======================= */
+
+-- 1. Sales and profit by category
 SELECT 
     category,
     ROUND(SUM(sales), 2) AS total_sales,
@@ -26,7 +50,7 @@ FROM sales_data
 GROUP BY category
 ORDER BY total_sales DESC;
 
--- Top 10 cities by total sales
+-- 2. Top 10 cities by total sales
 SELECT 
     city,
     ROUND(SUM(sales), 2) AS total_sales
@@ -35,7 +59,7 @@ GROUP BY city
 ORDER BY total_sales DESC
 LIMIT 10;
 
--- Profitability check: loss-making orders
+-- 3. Loss-making transactions
 SELECT 
     city,
     category,
@@ -48,7 +72,7 @@ WHERE profit < 0
 ORDER BY profit ASC
 LIMIT 10;
 
--- Impact of discount on profit
+-- 4. Impact of discount on profitability
 SELECT 
     discount,
     COUNT(*) AS total_orders,
@@ -57,7 +81,7 @@ FROM sales_data
 GROUP BY discount
 ORDER BY discount;
 
--- Best and worst sub-categories by profit
+-- 5. Sub-category profitability
 SELECT 
     sub_category,
     ROUND(SUM(profit), 2) AS total_profit
@@ -65,7 +89,7 @@ FROM sales_data
 GROUP BY sub_category
 ORDER BY total_profit DESC;
 
--- Customer segment analysis
+-- 6. Customer segment analysis
 SELECT 
     segment,
     ROUND(SUM(sales), 2) AS total_sales,
@@ -73,19 +97,12 @@ SELECT
 FROM sales_data
 GROUP BY segment;
 
--- High-sales but low-profit red flags
+-- 7. High-sales but low-profit categories
 SELECT 
     category,
     ROUND(SUM(sales), 2) AS total_sales,
     ROUND(SUM(profit), 2) AS total_profit
 FROM sales_data
 GROUP BY category
-HAVING total_sales > 50000 AND total_profit < 0;
-
-
-
-
-
-
-
-
+HAVING total_sales > 50000
+   AND total_profit < 0;
