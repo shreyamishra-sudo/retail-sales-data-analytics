@@ -5,18 +5,18 @@ and key drivers of revenue. Visuals were intentionally limited to focus on
 decision-relevant insights rather than exhaustive analysis.
 
 ### Total Sales
-![Total Sales KPI](dashboard/kpi_total_sales.png)
+![Total Sales KPI](kpi_total_sales.png)
 Displays total revenue generated across all regions and product categories.
 
 ### Total Profit
-![Total Profit KPI](dashboard/kpi_total_profit.png)
+![Total Profit KPI](kpi_total_profit.png)
 Shows overall profitability after accounting for discounts and costs.
 
 ### Sales by Region
-![Sales by Region](dashboard/sales_by_region.png)
+![Sales by Region](sales_by_region.png)
 Highlights regional contribution to total sales.
 
 ### Profit by Region
-![Profit by Region](dashboard/profit_by_region.png)
+![Profit by Region](profit_by_region.png)
 Reveals profit differences across regions.
 
