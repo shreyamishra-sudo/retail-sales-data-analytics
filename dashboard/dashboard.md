@@ -20,3 +20,6 @@ Highlights regional contribution to total sales.
 ![Profit by Region](profit_by_region.png)
 Reveals profit differences across regions.
 
+### Category Performance
+![Category Performance](category_sales_vs_profit.png)
+Compares revenue and profit across product categories, highlighting cases where high sales do not translate into strong profitability.
