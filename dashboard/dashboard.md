@@ -22,4 +22,4 @@ Reveals profit differences across regions.
 
 ### Category Performance
 ![Category Performance](category_sales_vs_profit.png)
-Compares revenue and profit across product categories, highlighting cases where high sales do not translate into strong profitability.
+Compares revenue and profit across product categories, highlighting cases where high sales do not translate into strong profit.
