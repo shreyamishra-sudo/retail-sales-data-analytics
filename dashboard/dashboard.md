@@ -23,3 +23,8 @@ Reveals profit differences across regions.
 ### Category Performance
 ![Category Performance](category_sales_vs_profit.png)
 Compares revenue and profit across product categories, highlighting cases where high sales do not translate into strong profit.
+
+### Discount Impact on Profitability
+![Discount vs Profit](avg_profit_by_discount.png)
+Shows that higher discount levels are associated with declining and negative average profit, indicating margin erosion at aggressive discounts.
+
