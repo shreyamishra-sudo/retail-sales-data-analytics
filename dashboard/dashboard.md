@@ -28,3 +28,7 @@ Compares revenue and profit across product categories, highlighting cases where 
 ![Discount vs Profit](avg_profit_by_discount.png)
 Shows that higher discount levels are associated with declining and negative average profit, indicating margin erosion at aggressive discounts.
 
+### Customer Segment Contribution
+![Customer Segment Performance](segment_sales_vs_profit.png)
+Compares sales and profit across customer segments, highlighting the dominant contribution of Consumer and Corporate customers.
+
