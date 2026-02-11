@@ -42,20 +42,16 @@ This project uses:
 
 ## 📁 Repository Structure
 
+```
 retail-sales-data-analytics/
-
-├── dashboard/ ← Tableau screenshots + workbook
-
-├── data/ ← Source dataset (raw_sales_data.csv)
-
-├── insights/ ← Written business insights
-
-├── sql/ ← SQL exploratory & final queries
-
-├── notebooks/ ← (if any if you explored data via notebook)
-
-└── README.md ← This file
-
+│
+├── dashboard/        # Tableau screenshots + workbook (.twb)
+├── data/             # Source dataset (raw_sales_data.csv)
+├── insights/         # Written business insights
+├── sql/              # SQL exploratory work + final queries
+├── notebooks/        # (Optional) Jupyter notebooks if used
+└── README.md         # Project documentation
+```
 
 ---
 
