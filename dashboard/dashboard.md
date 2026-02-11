@@ -32,3 +32,9 @@ Shows that higher discount levels are associated with declining and negative ave
 ![Customer Segment Performance](segment_sales_vs_profit.png)
 Compares sales and profit across customer segments, highlighting the dominant contribution of Consumer and Corporate customers.
 
+## Interactive Dashboard
+
+An interactive Tableau dashboard was built to analyze regional performance, category profitability, discount impact, and customer segmentation.
+
+🔗 View the live dashboard here:  
+[Retail Sales Performance Dashboard](https://public.tableau.com/app/profile/shreya.mishra1494/viz/retail_sales_dashboard_17708159755290/RetailSalesPerformanceDashboard)
